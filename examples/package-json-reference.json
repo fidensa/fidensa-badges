@@ -1,0 +1,12 @@
+{
+  "name": "mcp-server-everything",
+  "version": "2.0.0",
+  "description": "MCP reference server for testing and development",
+  "certification": {
+    "authority": "fidensa.com",
+    "capability_id": "mcp-server-everything",
+    "version": "2.0.0",
+    "status_url": "https://fidensa.com/v1/attestation/mcp-server-everything/2.0.0",
+    "badge_url": "https://fidensa.com/badges/mcp-server-everything/2.0.0.svg"
+  }
+}
