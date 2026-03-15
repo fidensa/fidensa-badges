@@ -12,9 +12,10 @@ These badges are served live from the Fidensa attestation infrastructure. They r
 
 | Capability | Badge | Tier | Score |
 |---|---|---|---|
-| mcp-server-everything | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-everything.svg)](https://fidensa.com/v1/attestation/mcp-server-everything) | Certified | 68/D |
-| mcp-server-filesystem | [![Fidensa Verified](https://fidensa.com/badges/mcp-server-filesystem.svg)](https://fidensa.com/v1/attestation/mcp-server-filesystem) | Verified | 67/D |
-| docx-skill | [![Fidensa Evaluated](https://fidensa.com/badges/docx-skill.svg)](https://fidensa.com/v1/attestation/docx-skill) | Evaluated | 43/F |
+| fidensa-mcp-server | [![Fidensa Certified](https://fidensa.com/badges/fidensa-mcp-server.svg)](https://fidensa.com/v1/attestation/fidensa-mcp-server) | Certified | 96/A |
+| mcp-server-everything | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-everything.svg)](https://fidensa.com/v1/attestation/mcp-server-everything) | Certified | 91/A |
+| mcp-server-filesystem | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-filesystem.svg)](https://fidensa.com/v1/attestation/mcp-server-filesystem) | Certified | 90/A |
+| docx-skill | [![Fidensa Certified](https://fidensa.com/badges/docx-skill.svg)](https://fidensa.com/v1/attestation/docx-skill) | Certified | 88/B |
 
 If a certification is suspended, revoked, or expired, the badge updates automatically.
 
@@ -100,14 +101,14 @@ GET https://fidensa.com/v1/attestation/by-hash/{contentHash}
 {
   "schema_version": "1.0",
   "capability_id": "mcp-server-everything",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "status": "valid",
   "tier": "certified",
-  "trust_score": 68,
-  "grade": "D",
+  "trust_score": 91,
+  "grade": "A",
   "supply_chain_status": "clean",
-  "certified_at": "2026-03-11T...",
-  "expires_at": "2027-03-11T...",
+  "certified_at": "2026-03-14T...",
+  "expires_at": "2027-03-14T...",
   "badge_url": "https://fidensa.com/badges/mcp-server-everything.svg"
 }
 ```
