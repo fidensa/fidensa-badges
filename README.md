@@ -16,6 +16,7 @@ These badges are served live from the Fidensa attestation infrastructure. They r
 | mcp-server-everything | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-everything.svg)](https://fidensa.com/v1/attestation/mcp-server-everything) | Certified | 91/A |
 | mcp-server-filesystem | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-filesystem.svg)](https://fidensa.com/v1/attestation/mcp-server-filesystem) | Certified | 90/A |
 | docx-skill | [![Fidensa Certified](https://fidensa.com/badges/docx-skill.svg)](https://fidensa.com/v1/attestation/docx-skill) | Certified | 88/B |
+| devin-cursorrules | [![Fidensa Verified](https://fidensa.com/badges/devin-cursorrules.svg)](https://fidensa.com/v1/attestation/devin-cursorrules) | Verified | 72/C |
 
 If a certification is suspended, revoked, or expired, the badge updates automatically.
 
