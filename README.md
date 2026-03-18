@@ -13,10 +13,12 @@ These badges are served live from the Fidensa attestation infrastructure. They r
 | Capability | Badge | Tier | Score |
 |---|---|---|---|
 | fidensa-mcp-server | [![Fidensa Certified](https://fidensa.com/badges/fidensa-mcp-server.svg)](https://fidensa.com/v1/attestation/fidensa-mcp-server) | Certified | 96/A |
+| mcp-server-fetch | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-fetch.svg)](https://fidensa.com/v1/attestation/mcp-server-fetch) | Certified | 92/A |
 | mcp-server-everything | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-everything.svg)](https://fidensa.com/v1/attestation/mcp-server-everything) | Certified | 91/A |
-| mcp-server-filesystem | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-filesystem.svg)](https://fidensa.com/v1/attestation/mcp-server-filesystem) | Certified | 90/A |
-| docx-skill | [![Fidensa Certified](https://fidensa.com/badges/docx-skill.svg)](https://fidensa.com/v1/attestation/docx-skill) | Certified | 88/B |
-| devin-cursorrules | [![Fidensa Verified](https://fidensa.com/badges/devin-cursorrules.svg)](https://fidensa.com/v1/attestation/devin-cursorrules) | Verified | 72/C |
+| mcp-server-filesystem | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-filesystem.svg)](https://fidensa.com/v1/attestation/mcp-server-filesystem) | Certified | 91/A |
+| docx-skill | [![Fidensa Certified](https://fidensa.com/badges/docx-skill.svg)](https://fidensa.com/v1/attestation/docx-skill) | Certified | 79/C |
+| devin-cursorrules | [![Fidensa Verified](https://fidensa.com/badges/devin-cursorrules.svg)](https://fidensa.com/v1/attestation/devin-cursorrules) | Verified | 77/C |
+| voltagent-code-reviewer | [![Fidensa Verified](https://fidensa.com/badges/voltagent-code-reviewer.svg)](https://fidensa.com/v1/attestation/voltagent-code-reviewer) | Verified | 72/C |
 
 If a certification is suspended, revoked, or expired, the badge updates automatically.
 
@@ -70,6 +72,21 @@ Fidensa badges support the same style conventions as [shields.io](https://shield
 
 ---
 
+## Maturity Indicator
+
+Badges include a maturity indicator shown as dots (●○○○ through ●●●●). This reflects how much real-world validation a certification has received beyond the initial pipeline evaluation.
+
+| Level | Dots | Meaning |
+|---|---|---|
+| **Initial** | ●○○○ | Pipeline-tested only. No consumer reports or monitoring data yet. |
+| **Emerging** | ●●○○ | ≥10 consumer reports or ≥30 days of uptime monitoring. |
+| **Established** | ●●●○ | ≥50 reports from 10+ consumers and ≥90 days monitoring. |
+| **Proven** | ●●●● | ≥200 reports from 25+ consumers and ≥180 days monitoring. |
+
+Maturity is computed dynamically — as consumer experience reports accumulate and uptime monitoring data grows, the dots fill in automatically. The badge always reflects the current maturity level.
+
+---
+
 ## Certification Tiers
 
 Fidensa assigns one of three tiers based on verification results. The tier determines the badge color and label.
@@ -107,6 +124,7 @@ GET https://fidensa.com/v1/attestation/by-hash/{contentHash}
   "tier": "certified",
   "trust_score": 91,
   "grade": "A",
+  "maturity": "Initial",
   "supply_chain_status": "clean",
   "certified_at": "2026-03-14T...",
   "expires_at": "2027-03-14T...",
