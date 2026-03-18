@@ -1,6 +1,6 @@
 # Fidensa Certification Badges
 
-**[Fidensa](https://fidensa.com)** is an independent AI certification authority. We verify that AI capabilities — MCP servers, Skills, plugins, and workflows — actually do what they claim, through behavioral testing, adversarial analysis, and supply chain verification. Every certification is a signed, portable artifact that anyone can verify against the evidence.
+**[Fidensa](https://fidensa.com)** is an independent AI certification authority. We verify that AI capabilities — MCP servers, skills, agent rules, hooks, sub-agents, and plugins — actually do what they claim, through behavioral testing, adversarial analysis, and supply chain verification. Every certification is a signed, portable artifact that anyone can verify against the evidence.
 
 This repo documents how to embed Fidensa certification badges in your README, website, or manifest — and serves as a live demonstration.
 
@@ -177,7 +177,7 @@ Every signed certification artifact includes the full evidence trail. Trust clai
 
 ## Request Certification
 
-If you maintain an MCP server, Skill, plugin, or workflow and want it independently certified, visit [fidensa.com](https://fidensa.com) or open an issue in this repo.
+If you maintain an MCP server, skill, agent rules file, hook, sub-agent, or plugin and want it independently certified, visit [fidensa.com](https://fidensa.com) or open an issue in this repo.
 
 ---
 
