@@ -1,8 +1,8 @@
 # Fidensa Certification Badges
 
-**[Fidensa](https://fidensa.com)** is an independent AI certification authority. We verify that AI capabilities — MCP servers, skills, agent rules, hooks, sub-agents, and plugins — actually do what they claim, through behavioral testing, adversarial analysis, and supply chain verification. Every certification is a signed, portable artifact that anyone can verify against the evidence.
+**[Fidensa](https://fidensa.com)** is an independent AI certification authority. We verify that AI capabilities -- MCP servers, skills, agent rules files, hooks, sub-agents, and plugins -- actually do what they claim, through behavioral testing, adversarial analysis, and supply chain verification. Every certification is a signed, portable artifact that anyone can verify against the evidence.
 
-This repo documents how to embed Fidensa certification badges in your README, website, or manifest — and serves as a live demonstration.
+This repo documents how to embed Fidensa certification badges in your README, website, or manifest -- and serves as a live demonstration.
 
 ---
 
@@ -10,15 +10,14 @@ This repo documents how to embed Fidensa certification badges in your README, we
 
 These badges are served live from the Fidensa attestation infrastructure. They reflect current certification status in real time.
 
-| Capability | Badge | Tier | Score |
-|---|---|---|---|
-| fidensa-mcp-server | [![Fidensa Certified](https://fidensa.com/badges/fidensa-mcp-server.svg)](https://fidensa.com/v1/attestation/fidensa-mcp-server) | Certified | 96/A |
-| mcp-server-fetch | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-fetch.svg)](https://fidensa.com/v1/attestation/mcp-server-fetch) | Certified | 92/A |
-| mcp-server-everything | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-everything.svg)](https://fidensa.com/v1/attestation/mcp-server-everything) | Certified | 91/A |
-| mcp-server-filesystem | [![Fidensa Certified](https://fidensa.com/badges/mcp-server-filesystem.svg)](https://fidensa.com/v1/attestation/mcp-server-filesystem) | Certified | 91/A |
-| docx-skill | [![Fidensa Certified](https://fidensa.com/badges/docx-skill.svg)](https://fidensa.com/v1/attestation/docx-skill) | Certified | 79/C |
-| devin-cursorrules | [![Fidensa Verified](https://fidensa.com/badges/devin-cursorrules.svg)](https://fidensa.com/v1/attestation/devin-cursorrules) | Verified | 77/C |
-| voltagent-code-reviewer | [![Fidensa Verified](https://fidensa.com/badges/voltagent-code-reviewer.svg)](https://fidensa.com/v1/attestation/voltagent-code-reviewer) | Verified | 72/C |
+| Capability | Badge | Tier | Score | Type |
+|---|---|---|---|---|
+| fidensa-mcp-server | [![Fidensa Certified](https://fidensa.com/badges/fidensa-mcp-server.svg)](https://fidensa.com/v1/attestation/fidensa-mcp-server) | Certified | 96/A | MCP Server |
+| docx-skill | [![Fidensa Certified](https://fidensa.com/badges/docx-skill.svg)](https://fidensa.com/v1/attestation/docx-skill) | Certified | 90/A | Skill |
+| mcp-server-git | [![Fidensa Verified](https://fidensa.com/badges/mcp-server-git.svg)](https://fidensa.com/v1/attestation/mcp-server-git) | Verified | 79/C | MCP Server |
+| claude-guardrails | [![Fidensa Verified](https://fidensa.com/badges/claude-guardrails.svg)](https://fidensa.com/v1/attestation/claude-guardrails) | Verified | 75/C | Hook |
+
+These are a representative sample. **[Browse all 18 certifications](https://fidensa.com/certifications)** spanning MCP servers, skills, rules files, hooks, sub-agents, and plugins.
 
 If a certification is suspended, revoked, or expired, the badge updates automatically.
 
@@ -74,16 +73,16 @@ Fidensa badges support the same style conventions as [shields.io](https://shield
 
 ## Maturity Indicator
 
-Badges include a maturity indicator shown as dots (●○○○ through ●●●●). This reflects how much real-world validation a certification has received beyond the initial pipeline evaluation.
+Badges include a maturity indicator shown as dots (through). This reflects how much real-world validation a certification has received beyond the initial pipeline evaluation.
 
 | Level | Dots | Meaning |
 |---|---|---|
-| **Initial** | ●○○○ | Pipeline-tested only. No consumer reports or monitoring data yet. |
-| **Emerging** | ●●○○ | ≥10 consumer reports or ≥30 days of uptime monitoring. |
-| **Established** | ●●●○ | ≥50 reports from 10+ consumers and ≥90 days monitoring. |
-| **Proven** | ●●●● | ≥200 reports from 25+ consumers and ≥180 days monitoring. |
+| **Initial** | one filled, three empty | Pipeline-tested only. No consumer reports or monitoring data yet. |
+| **Emerging** | two filled, two empty | 10 or more consumer reports or 30 or more days of uptime monitoring. |
+| **Established** | three filled, one empty | 50 or more reports from 10 or more consumers and 90 or more days monitoring. |
+| **Proven** | four filled | 200 or more reports from 25 or more consumers and 180 or more days monitoring. |
 
-Maturity is computed dynamically — as consumer experience reports accumulate and uptime monitoring data grows, the dots fill in automatically. The badge always reflects the current maturity level.
+Maturity is computed dynamically -- as consumer experience reports accumulate and uptime monitoring data grows, the dots fill in automatically. The badge always reflects the current maturity level.
 
 ---
 
@@ -97,13 +96,13 @@ Fidensa assigns one of three tiers based on verification results. The tier deter
 | **Verified** | Pipeline completed with findings. At least one stage produced data. All stages ran. | Blue |
 | **Evaluated** | Partial coverage. One or more pipeline stages failed or were skipped. Honest about gaps. | Amber |
 
-Every certification also includes a numeric trust score (0–100) and letter grade (A–F). These are computed from eight weighted signals covering functional testing, security analysis, adversarial resilience, SBOM supply chain health, and more. The per-signal breakdown is always published alongside the aggregate — we don't hide behind a single number.
+Every certification also includes a numeric trust score (0-100) and letter grade (A-F). These are computed from eight weighted signals covering functional testing, security analysis, adversarial resilience, SBOM supply chain health, and more. The per-signal breakdown is always published alongside the aggregate -- we don't hide behind a single number.
 
 ---
 
 ## Attestation API
 
-Every badge links to the JSON attestation endpoint. Consumers — human or AI — can verify certification status programmatically.
+Every badge links to the JSON attestation endpoint. Consumers -- human or AI -- can verify certification status programmatically.
 
 **Endpoints:**
 
@@ -122,8 +121,8 @@ GET https://fidensa.com/v1/attestation/by-hash/{contentHash}
   "version": "1.0.0",
   "status": "valid",
   "tier": "certified",
-  "trust_score": 91,
-  "grade": "A",
+  "trust_score": 84,
+  "grade": "B",
   "maturity": "Initial",
   "supply_chain_status": "clean",
   "certified_at": "2026-03-14T...",
@@ -162,14 +161,15 @@ An AI agent or tooling that encounters this block can immediately fetch the atte
 
 ## What Fidensa Verifies
 
-The certification pipeline runs six stages against every capability:
+The certification pipeline runs seven stages against every capability:
 
-1. **Ingest** — Source acquisition, build, and capability enumeration
-2. **SBOM & Supply Chain** — Software bill of materials generation, vulnerability scanning (syft, grype, osv-scanner)
-3. **Security Analysis** — Static analysis, behavioral scanning, LLM-assisted review
-4. **Functional Testing** — Automated test generation and execution against declared interfaces
-5. **Adversarial Testing** — Structured attack library (6 categories, 40+ patterns) covering prompt injection, data exfiltration, resource abuse, and more
-6. **Behavioral Fingerprint** — Per-tool timing profiles, error rates, resource consumption baselines
+1. **Ingest** -- Source acquisition, build, capability enumeration, provenance metadata gathering
+2. **SBOM and Supply Chain** -- Software bill of materials generation, vulnerability scanning (syft, grype, osv-scanner, cdxgen)
+3. **Security Analysis** -- Static analysis, behavioral scanning, LLM-assisted review
+4. **Functional Testing** -- Automated test generation and execution against declared interfaces
+5. **Adversarial Testing** -- Structured attack library (6 categories, 55 patterns) covering prompt injection, data exfiltration, resource abuse, and more, with impact-based finding classification (Block/Warn/Review/Info)
+6. **Behavioral Fingerprint** -- Per-tool timing profiles, error rates, resource consumption baselines
+7. **Certification** -- Contract assembly with OWASP MCP Top 10 coverage mapping, provenance verification, trust score computation from eight weighted signals, ES256 cryptographic signing
 
 Every signed certification artifact includes the full evidence trail. Trust claims are verifiable, not asserted.
 
