@@ -15,9 +15,9 @@ These badges are served live from the Fidensa attestation infrastructure. They r
 | fidensa-mcp-server | [![Fidensa Certified](https://fidensa.com/badges/fidensa-mcp-server.svg)](https://fidensa.com/v1/attestation/fidensa-mcp-server) | Certified | 96/A | MCP Server |
 | docx-skill | [![Fidensa Certified](https://fidensa.com/badges/docx-skill.svg)](https://fidensa.com/v1/attestation/docx-skill) | Certified | 90/A | Skill |
 | mcp-server-git | [![Fidensa Verified](https://fidensa.com/badges/mcp-server-git.svg)](https://fidensa.com/v1/attestation/mcp-server-git) | Verified | 79/C | MCP Server |
-| claude-guardrails | [![Fidensa Verified](https://fidensa.com/badges/claude-guardrails.svg)](https://fidensa.com/v1/attestation/claude-guardrails) | Verified | 75/C | Hook |
+| claude-guardrails | [![Fidensa Verified](https://fidensa.com/badges/claude-guardrails.svg)](https://fidensa.com/v1/attestation/claude-guardrails) | Verified | 71/D | Hook |
 
-These are a representative sample. **[Browse all 18 certifications](https://fidensa.com/certifications)** spanning MCP servers, skills, rules files, hooks, sub-agents, and plugins.
+These are a representative sample. **[Browse all 50 certifications](https://fidensa.com/certifications)** spanning MCP servers, skills, rules files, hooks, sub-agents, and plugins.
 
 If a certification is suspended, revoked, or expired, the badge updates automatically.
 
